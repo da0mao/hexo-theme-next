@@ -49,7 +49,12 @@
       {%- set next_site = 'https://' + theme.scheme | lower + '.theme-next.org' %}
     {%- endif %}
     {{- __('footer.powered', next_url('https://hexo.io', 'Hexo', {class: 'theme-link'}) + ' & ' + next_url(next_site, 'NexT.' + theme.scheme, {class: 'theme-link'})) }}
-  </div>
+  
+            <a href="https://github.com/da0mao/da0mao.github.io/actions"
+                title="GitHub Actions"> <img
+                    src="https://github.com/da0mao/da0mao.github.io/workflows/CI/badge.svg?branch=blog-source"
+                    alt="GitHub Actions"></a>
+	</div>
 {%- endif %}
 
 {%- if theme.add_this_id %}
